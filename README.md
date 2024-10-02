@@ -114,4 +114,4 @@ Presentasikan pekerjaan anda dalam sebuah video.
 
 ## How to Submit?
 
-Please see https://youtu.be/cU546lAL9g8
+Please see  
