@@ -8,17 +8,17 @@ public class T03 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        String iSBN, jUDUL, pENULIS, pENERBIT, fORMAT, kETERANGAN, kATEGORI, tUB, dISKON;
-        int[] tAHUNTERBIT = new int[10], sTOK = new int[10], i = new int[10];
+        String iSBN, jUDUL, pENULIS, pENERBIT, fORMAT, tAHUNTERBIT, kETERANGAN, tUB, dISKON;
+        int sTOK;
         double hARGA, mINIMUMMARGIN, rATING, kATDISKON;
 
         do {
-            iSBN[i] = input.nextLine();
+            iSBN = input.nextLine();
             if (iSBN.equals("---")) {
             } else {
                 jUDUL = input.nextLine();
                 pENULIS = input.nextLine();
-                tAHUNTERBIT = Integer.parseInt(input.nextLine());
+                tAHUNTERBIT = input.nextLine();
                 pENERBIT = input.nextLine();
                 fORMAT = input.nextLine();
                 hARGA = Double.parseDouble(input.nextLine());
@@ -57,13 +57,12 @@ public class T03 {
                     }
                 }
             }
-            i = i + 1;
-            if (kATEGORI.equals("Best Pick") && dISKON.equals("Once in a lifetime")) {
+            if (kETERANGAN.equals("Best Pick") && dISKON.equals("Once in a lifetime")) {
                 tUB = "The ultimate best";
             } else {
                 tUB = "---";
             }
-            System.out.println(iSBN + "|" + jUDUL + "|" + pENULIS + "|" + tAHUNTERBIT + "|" + pENERBIT + "|" + fORMAT + "|" + toFixed(hARGA,2) + "|" + toFixed(mINIMUMMARGIN,2) + "|" + sTOK + "|" + toFixed(rATING,1) + "|" + kATEGORI + "|" + dISKON + "|" + tUB);
+            System.out.println(iSBN + "|" + jUDUL + "|" + pENULIS + "|" + tAHUNTERBIT + "|" + pENERBIT + "|" + fORMAT + "|" + toFixed(hARGA,2) + "|" + toFixed(mINIMUMMARGIN,2) + "|" + sTOK + "|" + toFixed(rATING,1) + "|" + kETERANGAN + "|" + dISKON + "|" + tUB);
         } while (!iSBN.equals("---"));
     }
     
