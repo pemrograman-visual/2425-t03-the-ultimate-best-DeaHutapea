@@ -43,6 +43,9 @@ public class T03 {
                     }
                 }
                 kATDISKON = mINIMUMMARGIN / hARGA * -1;
+                if (kATDISKON == -kATDISKON) {
+                    kATDISKON = kATDISKON * -1;
+                }
                 if (kATDISKON >= (double) 40 / 100) {
                     dISKON = "Once in a lifetime";
                 } else {
@@ -56,13 +59,13 @@ public class T03 {
                         }
                     }
                 }
+                if (kETERANGAN.equals("Best Pick") && dISKON.equals("Once in a lifetime")) {
+                    tUB = "The ultimate best";
+                } else {
+                    tUB = "---";
+                }
+                System.out.println(iSBN + "|" + jUDUL + "|" + pENULIS + "|" + tAHUNTERBIT + "|" + pENERBIT + "|" + fORMAT + "|" + toFixed(hARGA,2) + "|" + toFixed(mINIMUMMARGIN,2) + "|" + sTOK + "|" + toFixed(rATING,1) + "|" + kETERANGAN + "|" + dISKON + "|" + tUB);
             }
-            if (kETERANGAN.equals("Best Pick") && dISKON.equals("Once in a lifetime")) {
-                tUB = "The ultimate best";
-            } else {
-                tUB = "---";
-            }
-            System.out.println(iSBN + "|" + jUDUL + "|" + pENULIS + "|" + tAHUNTERBIT + "|" + pENERBIT + "|" + fORMAT + "|" + toFixed(hARGA,2) + "|" + toFixed(mINIMUMMARGIN,2) + "|" + sTOK + "|" + toFixed(rATING,1) + "|" + kETERANGAN + "|" + dISKON + "|" + tUB);
         } while (!iSBN.equals("---"));
     }
     
