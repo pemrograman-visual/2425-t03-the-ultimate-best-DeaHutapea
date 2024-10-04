@@ -4,7 +4,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T03{
+public class T03 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -21,10 +21,10 @@ public class T03{
                 tAHUNTERBIT = input.nextLine();
                 pENERBIT = input.nextLine();
                 fORMAT = input.nextLine();
-                hARGA = input.nextDouble();
-                mINIMUMMARGIN = input.nextDouble();
-                sTOK = input.nextInt();
-                rATING = input.nextDouble();
+                hARGA = Double.parseDouble(input.nextLine());
+                mINIMUMMARGIN = Double.parseDouble(input.nextLine());
+                sTOK = Integer.parseInt(input.nextLine());
+                rATING = Double.parseDouble(input.nextLine());
                 if (rATING >= 4.7) {
                     kETERANGAN = "Best Pick";
                 } else {
@@ -43,10 +43,10 @@ public class T03{
                     }
                 }
                 kATDISKON = mINIMUMMARGIN / hARGA * -1;
-                if (kATDISKON >= 40 / 100) {
+                if (kATDISKON >= (double) 40 / 100) {
                     dISKON = "Once in a lifetime";
                 } else {
-                    if (kATDISKON >= 20 / 100) {
+                    if (kATDISKON >= (double) 20 / 100) {
                         dISKON = "Never come twice";
                     } else {
                         if (kATDISKON > 0) {
