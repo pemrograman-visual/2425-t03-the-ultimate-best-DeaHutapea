@@ -4,10 +4,10 @@
         <attribute name="name" value="T01"/>
         <attribute name="authors" value="USER"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-10-04 09:23:09 AM"/>
+        <attribute name="saved" value="2024-10-04 09:30:36 AM"/>
         <attribute name="created" value="VVNFUjtMQVBUT1AtNVRBNjA4VTE7MjAyNC0wOS0wNjsxMDowODo0NCBBTTsyNTkx"/>
         <attribute name="edited" value="VVNFUjtMQVBUT1AtNVRBNjA4VTE7MjAyNC0wOS0yNzsxMDoyMDowMSBBTTszOzI2OTE="/>
-        <attribute name="edited" value="VXNlcjtMQVBUT1AtVlRCSTNKVFU7MjAyNC0xMC0wNDswOToyMzowOSBBTTsxMTsyOTQ5"/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtVlRCSTNKVFU7MjAyNC0xMC0wNDswOTozMDozNiBBTTsxMjsyOTQ4"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -75,13 +75,11 @@
                                         <assign variable="DISKON" expression="&quot;Never come twice&quot;"/>
                                     </then>
                                     <else>
-                                        <if expression="KATDISKON&gt;0">
+                                        <if expression="KATDISKON&gt;=0">
                                             <then>
                                                 <assign variable="DISKON" expression="&quot;No regret&quot;"/>
                                             </then>
-                                            <else>
-                                                <assign variable="DISKON" expression="&quot;---&quot;"/>
-                                            </else>
+                                            <else/>
                                         </if>
                                     </else>
                                 </if>

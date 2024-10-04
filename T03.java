@@ -52,10 +52,8 @@ public class T03 {
                     if (kATDISKON >= (double) 20 / 100) {
                         dISKON = "Never come twice";
                     } else {
-                        if (kATDISKON > 0) {
+                        if (kATDISKON >= 0) {
                             dISKON = "No regret";
-                        } else {
-                            dISKON = "---";
                         }
                     }
                 }
